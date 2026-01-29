@@ -11,17 +11,17 @@ def populate():
     python_pages = [
         {'title': 'Official Python Tutorial',
          'url':'http://docs.python.org/3/tutorial/'},
-        {'title':'HowtoThinklike aComputerScientist',
+        {'title':'How to Think like a Computer Scientist',
          'url':'http://www.greenteapress.com/thinkpython/'},
-        {'title':'LearnPythonin10 Minutes',
+        {'title':'Learn Python in 10 Minutes',
          'url':'http://www.korokithakis.net/tutorials/python/'}]
 
     django_pages = [
-        {'title':'OfficialDjangoTutorial',
+        {'title':'Official Django Tutorial',
          'url':'https://docs.djangoproject.com/en/2.1/intro/tutorial01/'},
-        {'title':'DjangoRocks',
+        {'title':'Django Rocks',
          'url':'http://www.djangorocks.com/'},
-        {'title':'HowtoTangowith Django',
+        {'title':'How to Tango with Django',
          'url':'http://www.tangowithdjango.com/'} ]
     
     other_pages = [
@@ -32,7 +32,7 @@ def populate():
     
     cats = {'Python':{'pages':python_pages, 'views': 128, 'likes': 64},
             'Django':{'pages':django_pages, 'views': 64, 'likes': 32},
-            'OtherFrameworks':{'pages': other_pages, 'views': 32, 'likes': 16}}
+            'Other Frameworks':{'pages': other_pages, 'views': 32, 'likes': 16}}
     
     #add each category and all the associated pages
     for cat, cat_data in cats.items():
